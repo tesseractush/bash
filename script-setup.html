@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Setup - Learn Bash With Me</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/tesseractush/portfolio/blob/main/src/app/favicon.ico?raw=true">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #000; color: #fff; font-family: 'Cutive', monospace; }
+    h1, h2, h3 { color: #0f0; }
+    .container { padding-top: 3rem; }
+    .module-section { border: 1px solid green; padding: 10px; margin-bottom: 20px; border-radius: 5px; background: #111; }
+    code { color: #0f0; background-color: #222; padding: 2px 4px; border-radius: 4px; font-family: 'Cutive', monospace; }
+    .logo { display: block; margin: 0 auto 30px; max-width: 150px; }
+    .nav-btns { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://github.com/tesseractush/portfolio/blob/main/public/logo-dark.png?raw=true" alt="Logo" class="logo">
+    <div class="nav-btns">
+      <a href="index.html" class="btn btn-outline-success">&larr; Main Page</a>
+      <a href="conditionals.html" class="btn btn-outline-success">Next: Conditionals &rarr;</a>
+    </div>
+    <h1>Script Setup</h1>
+    <p>This module covers the basics of writing and running Bash scripts.</p>
+    <div class="module-section">
+      <h2>Shebang (#!/bin/bash)</h2>
+      <p><strong>Description:</strong> The first line in a script that tells the system which interpreter to use.</p>
+      <p><strong>Syntax:</strong> <code>#!/bin/bash</code></p>
+      <p><strong>Example:</strong> <code>#!/bin/bash\necho Hello</code></p>
+      <p><strong>Tip:</strong> Use <code>#!/usr/bin/env bash</code> for portability across systems.</p>
+    </div>
+    <div class="module-section">
+      <h2>Variables</h2>
+      <p><strong>Description:</strong> Store values for use in scripts.</p>
+      <p><strong>Syntax:</strong> <code>VAR=value</code></p>
+      <p><strong>Example:</strong> <code>name="Alice"</code></p>
+      <p><strong>Tip:</strong> No spaces around <code>=</code>. Access with <code>$VAR</code>.</p>
+    </div>
+    <div class="module-section">
+      <h2>echo</h2>
+      <p><strong>Description:</strong> Prints text to the terminal.</p>
+      <p><strong>Syntax:</strong> <code>echo [text]</code></p>
+      <p><strong>Example:</strong> <code>echo "Hello, $name"</code></p>
+      <p><strong>Tip:</strong> Use quotes to preserve spaces and special characters.</p>
+    </div>
+    <div class="module-section">
+      <h2>read</h2>
+      <p><strong>Description:</strong> Reads user input into a variable.</p>
+      <p><strong>Syntax:</strong> <code>read [variable]</code></p>
+      <p><strong>Example:</strong> <code>read username</code></p>
+      <p><strong>Tip:</strong> Use <code>-p</code> to prompt: <code>read -p "Enter name: " name</code></p>
+    </div>
+    <div class="module-section">
+      <h2>Making scripts executable</h2>
+      <p><strong>Description:</strong> Allows a script to be run directly from the terminal.</p>
+      <p><strong>Syntax:</strong> <code>chmod +x script.sh</code></p>
+      <p><strong>Example:</strong> <code>chmod +x myscript.sh</code></p>
+      <p><strong>Tip:</strong> Run with <code>./myscript.sh</code> after making it executable.</p>
+    </div>
+    <div class="nav-btns">
+      <a href="index.html" class="btn btn-outline-success">&larr; Main Page</a>
+      <a href="conditionals.html" class="btn btn-outline-success">Next: Conditionals &rarr;</a>
+    </div>
+  </div>
+</body>
+</html> 

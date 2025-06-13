@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditionals - Learn Bash With Me</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/tesseractush/portfolio/blob/main/src/app/favicon.ico?raw=true">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #000; color: #fff; font-family: 'Cutive', monospace; }
+    h1, h2, h3 { color: #0f0; }
+    .container { padding-top: 3rem; }
+    .module-section { border: 1px solid green; padding: 10px; margin-bottom: 20px; border-radius: 5px; background: #111; }
+    code { color: #0f0; background-color: #222; padding: 2px 4px; border-radius: 4px; font-family: 'Cutive', monospace; }
+    .logo { display: block; margin: 0 auto 30px; max-width: 150px; }
+    .nav-btns { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://github.com/tesseractush/portfolio/blob/main/public/logo-dark.png?raw=true" alt="Logo" class="logo">
+    <div class="nav-btns">
+      <a href="index.html" class="btn btn-outline-success">&larr; Main Page</a>
+      <a href="loops.html" class="btn btn-outline-success">Next: Loops &rarr;</a>
+    </div>
+    <h1>Conditionals</h1>
+    <p>This module covers conditional logic in Bash scripts.</p>
+    <div class="module-section">
+      <h2>if / elif / else</h2>
+      <p><strong>Description:</strong> Executes code blocks based on conditions.</p>
+      <p><strong>Syntax:</strong> <code>if [ condition ]; then ... elif [ condition ]; then ... else ... fi</code></p>
+      <p><strong>Example:</strong> <code>if [ $age -ge 18 ]; then echo "Adult"; else echo "Minor"; fi</code></p>
+      <p><strong>Tip:</strong> Always close with <code>fi</code>. Use <code>elif</code> for multiple branches.</p>
+    </div>
+    <div class="module-section">
+      <h2>Test operators ([ ], [[ ]])</h2>
+      <p><strong>Description:</strong> Used to evaluate conditions in Bash.</p>
+      <p><strong>Syntax:</strong> <code>[ condition ]</code> or <code>[[ condition ]]</code></p>
+      <p><strong>Example:</strong> <code>[ -f file.txt ]</code> (checks if file exists)</p>
+      <p><strong>Tip:</strong> <code>[[ ]]</code> is more flexible and supports pattern matching.</p>
+    </div>
+    <div class="module-section">
+      <h2>case</h2>
+      <p><strong>Description:</strong> Multi-way branch statement for matching patterns.</p>
+      <p><strong>Syntax:</strong> <code>case $var in pattern1) ... ;; pattern2) ... ;; *) ... ;; esac</code></p>
+      <p><strong>Example:</strong> <code>case $color in red) echo "Stop";; green) echo "Go";; *) echo "Unknown";; esac</code></p>
+      <p><strong>Tip:</strong> Always end with <code>esac</code>. Patterns can use wildcards.</p>
+    </div>
+    <div class="nav-btns">
+      <a href="index.html" class="btn btn-outline-success">&larr; Main Page</a>
+      <a href="loops.html" class="btn btn-outline-success">Next: Loops &rarr;</a>
+    </div>
+  </div>
+</body>
+</html> 

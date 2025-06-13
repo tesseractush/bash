@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Bash With Me</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/tesseractush/portfolio/blob/main/src/app/favicon.ico?raw=true">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Cutive', monospace;
+    }
+    h1, h2, h3 {
+      color: #0f0;
+    }
+    .accordion-button {
+      background-color: #111;
+      color: #0f0;
+      border: 1px solid #0f0;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #222;
+      color: #fff;
+    }
+    .accordion-body {
+      background-color: #111;
+      color: #fff;
+    }
+    .project {
+      color: #0f0;
+      font-style: italic;
+    }
+    .container {
+      padding-top: 3rem;
+    }
+    .module-section {
+      border: 1px solid green;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    code {
+      color: #0f0;
+      background-color: #222;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: 'Cutive', monospace;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://github.com/tesseractush/portfolio/blob/main/public/logo-dark.png?raw=true" alt="Logo" class="logo">
+    <h1 class="text-center mb-5">Learn Bash With Me</h1>
+    <div class="accordion" id="bashAccordion">
+      <!-- Level 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Level 1: Bash Fundamentals (2 weeks)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#bashAccordion">
+          <div class="accordion-body">
+            <h5>Goal: Navigate the CLI, understand core commands, and create simple scripts</h5>
+            <div class="module-section">
+              <strong>Shell Basics</strong>
+              <a href="shell-basics.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Terminal vs. Shell</li>
+                <li>Basic commands <code>ls</code>, <code>cd</code>, <code>pwd</code>, <code>man</code></li>
+                <li>File operations <code>cp</code>, <code>mv</code>, <code>rm</code>, <code>mkdir</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Text Manipulation</strong>
+              <a href="text-manipulation.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>cat</code>, <code>head</code>, <code>tail</code></li>
+                <li><code>grep</code>, <code>cut</code>, <code>sort</code></li>
+                <li><code>&gt;</code>/<code>&gt;&gt;</code> redirection, <code>|</code> pipes</li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Permissions</strong>
+              <a href="permissions.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>chmod</code>, <code>sudo</code></li>
+                <li>Ownership <code>chown</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Script Setup</strong>
+              <a href="script-setup.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Shebang <code>#!/bin/bash</code></li>
+                <li>Variables, <code>echo</code>, <code>read</code></li>
+                <li>Making scripts executable</li>
+              </ul>
+            </div>
+            <p class="project">Project: User directory backup script</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Level 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Level 2: Scripting Foundations (3 weeks)
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#bashAccordion">
+          <div class="accordion-body">
+            <h5>Goal: Implement logic flows and handle user input</h5>
+            <div class="module-section">
+              <strong>Conditionals</strong>
+              <a href="conditionals.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>if</code>/<code>elif</code>/<code>else</code></li>
+                <li>Test operators <code>[ ]</code>, <code>[[ ]]</code></li>
+                <li><code>case</code> statements</li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Loops</strong>
+              <a href="loops.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>for</code>, <code>while</code>, <code>until</code></li>
+                <li>Loop control <code>break</code>, <code>continue</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Arguments & Exit Codes</strong>
+              <a href="arguments-exit-codes.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>$1</code>, <code>$2</code>, <code>$@</code>, <code>$#</code></li>
+                <li><code>$?</code> exit status handling</li>
+                <li>Custom exit codes</li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Advanced Variables</strong>
+              <a href="advanced-variables.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Default values <code>${VAR:-default}</code></li>
+                <li>String operations <code>${var//old/new}</code></li>
+              </ul>
+            </div>
+            <p class="project">Project: Log analyzer with filtering options</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Level 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Level 3: Advanced Techniques (3 weeks)
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#bashAccordion">
+          <div class="accordion-body">
+            <h5>Goal: Build robust, production-ready scripts</h5>
+            <div class="module-section">
+              <strong>Functions</strong>
+              <a href="functions.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Definition and invocation</li>
+                <li>Local vs global scope</li>
+                <li>Return values</li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Arrays & Associative Arrays</strong>
+              <a href="arrays.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Indexed arrays</li>
+                <li>Key-value pairs (Bash 4+)</li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Input/Output Control</strong>
+              <a href="input-output.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Here-docs/here-strings</li>
+                <li>Process substitution <code>&lt;(cmd)</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Error Handling</strong>
+              <a href="error-handling.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>set -e</code>, <code>set -u</code>, <code>set -o pipefail</code></li>
+                <li>Custom error messages</li>
+                <li>Trap signals <code>trap 'cleanup' EXIT</code></li>
+              </ul>
+            </div>
+            <p class="project">Project: System health monitor with alerts</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Level 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Level 4: Real-World Applications (4 weeks)
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#bashAccordion">
+          <div class="accordion-body">
+            <h5>Goal: Solve complex problems and optimize scripts</h5>
+            <div class="module-section">
+              <strong>CLI Tools</strong>
+              <a href="cli-tools.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>getopts</code> for option parsing</li>
+                <li>Interactive menus <code>select</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Text Processing</strong>
+              <a href="text-processing.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li><code>awk</code>/<code>sed</code> integration</li>
+                <li>Regex matching <code>=~</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Parallelization</strong>
+              <a href="parallelization.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Background jobs <code>&</code></li>
+                <li><code>wait</code>, <code>jobs</code></li>
+              </ul>
+            </div>
+            <div class="module-section">
+              <strong>Portability & Security</strong>
+              <a href="portability-security.html" class="btn btn-outline-success float-end ms-2">Start Learning</a>
+              <ul>
+                <li>Shebang portability <code>#!/usr/bin/env bash</code></li>
+                <li>Input sanitization</li>
+                <li>Restricted shells</li>
+              </ul>
+            </div>
+            <p class="project">Project: Automated deployment pipeline</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
